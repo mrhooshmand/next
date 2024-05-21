@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link";
+import TimeBlock from "@/app/components/TimeBlock";
 
 interface User {
     id: number,
@@ -13,7 +14,7 @@ const page = async () => {
     return (
         <div>
             <h1>Users List</h1>
-            <p>{new Date().toLocaleTimeString('fa-ir')}</p>
+            <p><TimeBlock/></p>
             <table className='table table-bordered'>
                 <thead>
                 <tr>
