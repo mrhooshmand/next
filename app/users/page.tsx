@@ -10,12 +10,14 @@ interface Props {
         sortKey: string
     };
 }
+
 interface User {
     id: number,
     name: string,
     email: string,
     username: string,
 }
+
 const page = async ({searchParams: {sortKey}}: Props) => {
     const re = await fetch(`https://jsonplaceholder.typicode.com/users`);
     const users: User[] = await re.json();
@@ -41,7 +43,10 @@ const page = async ({searchParams: {sortKey}}: Props) => {
                 </tbody>
             </table>
 
-            <Link href='/' className='btn btn-link text-center mt-5 flex justify-center w-20'>Back</Link>
+            <div className='text-center my-5 flex justify-between'>
+                <Link href='/' className='btn btn-link  w-20'>Back</Link>
+                <Link href='../users/new' className='btn text-blue-500 w-52'>Add New User</Link>
+            </div>
         </div>
     )
 }
