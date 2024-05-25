@@ -24,7 +24,7 @@ const Nav = () => {
                 </div>
             </div>
             <div className="navbar-center">
-                <Link href='./' className="btn btn-ghost text-xl">Main Page</Link>
+                <Link href='./' className="btn btn-ghost text-xl">NUi</Link>
             </div>
             <div className="navbar-end">
                 <button className="btn btn-ghost btn-circle">
