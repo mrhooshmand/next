@@ -21,7 +21,7 @@ const page = async ({searchParams: {sortKey}}: Props) => {
     const users: User[] = await re.json();
     const sortedList = sort(users).asc((user) => user[sortKey])
     return (
-        <div>
+        <div className="overflow-x-auto">
             <table className='table table-bordered'>
                 <thead>
                 <tr>
