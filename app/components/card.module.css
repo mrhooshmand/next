@@ -1,4 +1,6 @@
 .card{
     padding: 1rem;
     border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin: 5rem 0;
 }
