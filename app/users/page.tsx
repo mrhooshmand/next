@@ -23,10 +23,10 @@ const page = async ({searchParams: {sortKey}}: Props) => {
     const users: User[] = await re.json();
     const sortedList = sort(users).asc((user) => user[sortKey])
     return (
-        <div className="overflow-x-auto">
-            <table className='table table-bordered'>
+        <div className="overflow-x-auto mt-5">
+            <table className='table table-bordered table-striped'>
                 <thead>
-                <tr>
+                <tr className='bg-gray-300'>
                     <th><Link href='/users?sortKey=id'>ID</Link></th>
                     <th><Link href='/users?sortKey=name'>Name</Link></th>
                     <th><Link href='/users?sortKey=username'>username</Link></th>
