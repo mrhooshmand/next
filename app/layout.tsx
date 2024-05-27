@@ -20,7 +20,16 @@ export default function RootLayout({
         <html lang="en" data-theme='dracula'>
         <body className={inter.className}>
         <Nav/>
-        {children}
+        <main className='body-content'>
+            <div className="text-sm my-3 breadcrumbs">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Documents</a></li>
+                    <li>Add Document</li>
+                </ul>
+            </div>
+            {children}
+        </main>
         <Footer/>
         </body>
         </html>

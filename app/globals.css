@@ -20,6 +20,9 @@ body {
   color: rgb(var(--foreground-rgb));
   padding: 1rem;
 }
+.body-content{
+  min-height: calc(100vh - 420px);
+}
 @layer base {
   h1{
     @apply font-extrabold text-2xl
