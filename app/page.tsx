@@ -111,27 +111,7 @@ export default function Home() {
                     <td>12/8/2020</td>
                     <td>Purple</td>
                 </tr>
-                <tr>
-                    <th>7</th>
-                    <td>Meghann Durtnal</td>
-                    <td>Staff Accountant IV</td>
-                    <td>Schuster-Schimmel</td>
-                    <td>Philippines</td>
-                    <td>2/17/2021</td>
-                    <td>Yellow</td>
-                </tr>
                 </tbody>
-                <tfoot>
-                <tr>
-                    <th></th>
-                    <th>Name</th>
-                    <th>Job</th>
-                    <th>company</th>
-                    <th>location</th>
-                    <th>Last Login</th>
-                    <th>Favorite Color</th>
-                </tr>
-                </tfoot>
             </table>
         </div>
     </Fragment>
