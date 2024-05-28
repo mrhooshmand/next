@@ -45,7 +45,7 @@ const page = async ({searchParams: {sortKey}}: Props) => {
 
             <div className='text-center my-5 flex justify-between'>
                 <Link href='/' className='btn btn-link  w-20'>Back</Link>
-                <Link href='../users/new' className='btn text-blue-500 w-52'>Add User</Link>
+                <Link href='../users/new' className='btn btn-ghost w-52'>Add User</Link>
             </div>
         </div>
     )
