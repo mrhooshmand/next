@@ -19,7 +19,7 @@ interface User {
 }
 
 const page = async ({searchParams: {sortKey}}: Props) => {
-    const re = await fetch(`https://jsonplaceholder.typicode.com/users`);
+    const re = await fetch(`https://jsonplaceholder.typicode.com/usesrs`);
     const users: User[] = await re.json();
     const sortedList = sort(users).asc((user) => user[sortKey])
     return (
